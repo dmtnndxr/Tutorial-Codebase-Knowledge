@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Pydantic Core"
-nav_order: 18
+nav_order: 19
 has_children: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "SmolaAgents"
-nav_order: 20
+nav_order: 21
 has_children: true
 ---
 
