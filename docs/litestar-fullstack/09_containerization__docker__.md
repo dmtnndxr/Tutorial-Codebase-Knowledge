@@ -186,7 +186,7 @@ graph TD
     ComposeFile -- Defines --> DBService[Service: db]
     ComposeFile -- Defines --> CacheService[Service: cache]
     ComposeFile -- Defines --> Network[Docker Network]
-    ComposeFile -- Defines --> Volumes[Docker Volumes (e.g., db-data)]
+    ComposeFile -- Defines --> Volumes["Docker Volumes (e.g., db-data)"]
 
     Command -- Uses --> DockerEngine[Docker Engine]
 
@@ -195,10 +195,10 @@ graph TD
     DockerEngine -- Pulls --> DBImage[Image: postgres:latest]
     DockerEngine -- Pulls --> CacheImage[Image: valkey:latest]
 
-    DockerEngine -- Runs --> AppContainer[Container: app (running CMD)]
-    DockerEngine -- Runs --> WorkerContainer[Container: worker (running CMD)]
-    DockerEngine -- Runs --> DBContainer[Container: db (running postgres)]
-    DockerEngine -- Runs --> CacheContainer[Container: cache (running valkey)]
+    DockerEngine -- Runs --> AppContainer["Container: app (running CMD)"]
+    DockerEngine -- Runs --> WorkerContainer["Container: worker (running CMD)"]
+    DockerEngine -- Runs --> DBContainer["Container: db (running postgres)"]
+    DockerEngine -- Runs --> CacheContainer["Container: cache (running valkey)"]
 
     AppImage -- Used by --> AppContainer
     WorkerImage -- Used by --> WorkerContainer
@@ -212,6 +212,7 @@ graph TD
 
     DBContainer -- Persists data via --> Volumes
 ```
+
 
 ## Conclusion
 
